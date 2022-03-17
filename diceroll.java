@@ -4,15 +4,19 @@ public class diceroll { // java class for the purpose of making rolls given an u
 
 	public static void main(String[] args) { // announces the total roll
 		// TODO Auto-generated method stub
-		int[] userInput = syntax();
+		System.out.println(randGenerator(syntax()));
+	}
+	public static int randGenerator(int[] userInput) {
 		int diceNum = userInput[0];
 		int faceNum = userInput[1];
 		int total = 0;
+		int test = 0;
 		for (int x = 0; x < diceNum; x++) {
-			total += (int)(Math.random()*faceNum)+1;
-			
+			test = (int)(Math.random()*faceNum)+1;
+			total += test
+			// System.out.println(test); // For testing purposes only
 		}
-		System.out.println(total);
+		return total;
 	}
 	
 	public static int[] syntax() { // interprets the user dice roll input in the format of xdy (eg 1d20)
