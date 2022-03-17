@@ -13,7 +13,7 @@ public class diceroll { // java class for the purpose of making rolls given an u
 		int test = 0;
 		for (int x = 0; x < diceNum; x++) {
 			test = (int)(Math.random()*faceNum)+1;
-			total += test
+			total += test;
 			// System.out.println(test); // For testing purposes only
 		}
 		return total;
